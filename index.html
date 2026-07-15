@@ -1,0 +1,246 @@
+   <!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Massage Zen - Bien-Être Authentique</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Poppins:wght@300;500&display=swap" rel="stylesheet" />
+  <style>
+    body { font-family: 'Poppins', sans-serif; color: #333; }
+    h1, h2, h5 { font-family: 'Lora', serif; color: #12916f; }
+    .navbar { background-color: #12916f; }
+    a.nav-link { color: #fff; }
+    .hero {
+      background: url('hero.webp') center/cover no-repeat;
+      height: 100vh;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      top:0; left:0; right:0; bottom:0;
+      background: rgba(0,0,0,0.4);
+    }
+    .hero-content { position: relative; z-index: 1; }
+    .btn-success { background-color: #6c9a8b; border: none; }
+    .btn-success:hover { background-color: #5b8579; }
+    .card img { height: 220px; object-fit: cover; }
+    footer { background: #2c2c2c; color: #fff; }
+    .whatsapp-icon { margin-right:8px; }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Massage Zen</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#hero">Accueil</a></li>
+        <li class="nav-item"><a class="nav-link" href="#prestations">Prestations</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">À propos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#temoignages">Témoignages</a></li>
+        <li class="nav-item"><a class="nav-link" href="#rdv">Rendez-vous</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<header id="hero" class="hero">
+  <div class="hero-content">
+    <h1 class="display-5">Offrez-vous un moment de bien-être authentique</h1>
+    <a href="https://wa.me/33756913316?text=Bonjour,%20je%20souhaite%20prendre%20rendez-vous." class="btn btn-success btn-lg mt-3" target="_blank">
+      <span class="whatsapp-icon">📱</span> Prendre rendez-vous
+    </a>
+  </div>
+</header>
+
+<!-- About -->
+<section id="about" class="py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6 mb-4 mb-md-0">
+        <img src="massage-relaxant.png" class="img-fluid rounded shadow-sm" alt="Ambiance massage zen">
+      </div>
+      <div class="col-md-6">
+        <h2 class="mb-4">À propos de Massage Zen</h2>
+        <p>
+          Chez <strong>Massage Zen</strong>, nous croyons que le bien-être est une expérience authentique qui se vit dans un cadre harmonieux et apaisant.
+        </p>
+        <a href="#prestations" class="btn btn-success mt-3">Découvrir nos prestations</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Prestations & Tarifs -->
+<section id="prestations" class="py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="mb-4">Nos Prestations & Tarifs</h2>
+    <div class="row g-4">
+      <div class="col-md-3">
+        <div class="card shadow-sm">
+          <img src="massage-relaxant.png" class="card-img-top" alt="Massage relaxant">
+          <div class="card-body">
+            <h5 class="card-title">Massage Relaxant</h5>
+            <p class="card-text">60 min — 40 €</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card shadow-sm">
+          <img src="massage-therapeutique.jpg" class="card-img-top" alt="Massage thérapeutique">
+          <div class="card-body">
+            <h5 class="card-title">Massage Thérapeutique</h5>
+            <p class="card-text">75 min — 55 €</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card shadow-sm">
+          <img src="pierres-chaudes.jpg" class="card-img-top" alt="Massage pierres chaudes">
+          <div class="card-body">
+            <h5 class="card-title">Massage Pierres</h5>
+            <p class="card-text">90 min — 70 €</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card shadow-sm">
+          <img src="massage-duo.jpg" class="card-img-top" alt="Massage duo">
+          <div class="card-body">
+            <h5 class="card-title">Massage Duo</h5>
+            <p class="card-text">60 min — 80 €</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Témoignages -->
+<section id="temoignages" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Ce que disent nos clients</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <p class="card-text fst-italic">"Un moment de pure détente ! Le massage relaxant m'a fait un bien fou. Je recommande vivement."</p>
+            <div class="d-flex align-items-center mt-3">
+              <div>
+                <h6 class="mb-0">Sophie L.</h6>
+                <small class="text-muted">Lyon</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <p class="card-text fst-italic">"Massage thérapeutique excellent pour mon dos. Professionnel et à l'écoute. Merci beaucoup !"</p>
+            <div class="d-flex align-items-center mt-3">
+              <div>
+                <h6 class="mb-0">Marc Dupont</h6>
+                <small class="text-muted">Lyon</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <p class="card-text fst-italic">"Le massage duo avec mon conjoint était magique. Ambiance zen et tarifs raisonnables. On reviendra !"</p>
+            <div class="d-flex align-items-center mt-3">
+              <div>
+                <h6 class="mb-0">Julie & Thomas</h6>
+                <small class="text-muted">Lyon</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Formulaire Rendez-vous -->
+<section id="rdv" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Prendre rendez-vous</h2>
+    <form class="row g-3" id="rdv-form">
+      <div class="col-md-6">
+        <label class="form-label" for="name">Nom</label>
+        <input type="text" id="name" class="form-control" required />
+      </div>
+      <div class="col-md-6">
+        <label class="form-label" for="email">Email</label>
+        <input type="email" id="email" class="form-control" required />
+      </div>
+      <div class="col-md-6">
+        <label class="form-label" for="phone">Téléphone</label>
+        <input type="tel" id="phone" class="form-control" required />
+      </div>
+      <div class="col-md-6">
+        <label class="form-label" for="date">Date</label>
+        <input type="date" id="date" class="form-control" required />
+      </div>
+      <div class="col-12">
+        <label class="form-label" for="message">Message</label>
+        <textarea id="message" class="form-control" rows="3" placeholder="Précisez le type de massage souhaité..."></textarea>
+      </div>
+      <div class="col-12 text-center">
+        <button type="submit" class="btn btn-success px-4">
+          <span class="whatsapp-icon">📱</span> Réserver via WhatsApp
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="py-5">
+  <div class="container text-center">
+    <h2 class="mb-4">Contact</h2>
+    <p>Email : massagezen2212@gmail.com</p>
+    <p>Whatsapp : 07 56 91 33 16</p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center py-3">
+  <p>&copy; 2026 Massage Zen - Tous droits réservés</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  // WhatsApp sur le formulaire
+  document.getElementById('rdv-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const name = document.getElementById('name').value;
+    const phone = document.getElementById('phone').value;
+    const date = document.getElementById('date').value;
+    const message = document.getElementById('message').value || '';
+
+    const text = `Bonjour, je souhaite réserver un massage.%0ANom: ${name}%0ATéléphone: ${phone}%0ADate: ${date}%0AMessage: ${message}`;
+    window.open(`https://wa.me/33756913316?text=${text}`, '_blank');
+  });
+</script>
+
+</body>
+      </html>
